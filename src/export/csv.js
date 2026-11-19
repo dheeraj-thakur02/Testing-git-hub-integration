@@ -10,5 +10,5 @@ function escape(value) {
 }
 
 export function formatClosedOn(date) {
-  return date.toLocaleDateString('en-GB');
+  return date.toISOString().slice(0, 10);
 }
